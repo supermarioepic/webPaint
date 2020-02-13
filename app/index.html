@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/global.min.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section class="select">
+		<form class="select__form" action="#">
+			<h1 class="select__title">Select paper size</h1>
+			<div class="select__block">
+				<input type="number" min="10" max="100" placeholder="Width" class="select__field" id="width">
+				<input type="number" min="10" max="100" placeholder="Height" class="select__field" id="height">
+			</div>
+			<button type="text" class="select__button">Save</button>
+		</form>
+	</section>
+	
+	<div class="paper">
+
+	</div>
+
+	<div class="control">
+		<input type="number" min="1" max="100" placeholder="row-start"  class="control__inp" id="Rstart">
+		<input type="number" min="1" max="100" placeholder="row-end"  class="control__inp" id="Rend">
+		<input type="number" min="1" max="100" placeholder="column-start"  class="control__inp" id="Cstart">
+		<input type="number" min="1" max="100" placeholder="column-end"  class="control__inp" id="Cend">
+		<button class="control__button">Send</button>
+		<input type="text" placeholder="color#" maxlength="6" class="control__inp" id="color">
+
+	</div>
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+</body>
+</html>
